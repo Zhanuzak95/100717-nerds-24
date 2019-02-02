@@ -4,7 +4,6 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>HTML Academy: Нёрдс</title>
 </head>
-
 <body>
 	<header class="header">
 		<nav class="navigation">
@@ -18,123 +17,121 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
-		<div class="shop-item"><img src="img/cart-icon.svg"><a href="cart-item.html">Корзина</a></div>
-		<h1 class="text-main">Магазин готовых шаблонов</h1>
+		<a class="cart" href="cart-item.html"><img src="img/cart-icon.svg">Корзина</a>
+		<h1 class="slogan">Магазин готовых шаблонов</h1>
 	</header>
 	<main class="catalog">
 		<section class="filters">
 			<form action="https://echo.htmlacademy.ru" method="post">
-				<h2 class="visually-hidden">Фильтр шаблонов</h2>
-				<div class="filter-network">
+				<div class="type">
 					<b>Сетка:</b>
 					<label>
-						<input class="filter-network-input" type="radio" name="network" value="adp">
+						<input class="filter-type" type="radio" name="network" value="adaptable">
 						Адаптивная
 					</label>
 					<label>
-						<input class="filter-network-input" type="radio" name="network" value="fix">
+						<input class="filter-type" type="radio" name="network" value="fixed">
 						Фиксированная
 					</label>
 					<label>
-						<input class="filter-network-input" type="radio" name="network" value="rub">
+						<input class="filter-type" type="radio" name="network" value="rubber">
 						Резиновая
 					</label>
 				</div>
-				<div class="filter-network">
+				<div class="module">
 					<b>Особенности:</b>
 					<label>
-						<input class="filter-network-feature" muliple type="checkbox" name="properties" value="sld">
+						<input class="list" type="checkbox" name="module" value="slider">
 						Слайдер
 					</label>
 					<label>
-						<input class="filter-network-feature" muliple type="checkbox" name="properties" value="blc">
+						<input class="list" type="checkbox" name="module" value="block">
 						Блок преимуществ
 					</label>
 					<label>
-						<input class="filter-network-feature" muliple type="checkbox" name="properties" value="news">
+						<input class="list" type="checkbox" name="module" value="news">
 						Новости
 					</label>
 					<label>
-						<input class="filter-network-feature" muliple type="checkbox" name="properties" value="gallery">
+						<input class="list" type="checkbox" name="module" value="gallery">
 						Галерея
 					</label>
 					<label>
-						<input class="filter-network-feature" muliple type="checkbox" name="properties" value="basket">
+						<input class="list" type="checkbox" name="module" value="basket">
 						Корзина
 					</label>
 				</div>
-				<input type="submit" value="Отправить">
+				<button class="button-filters" type="submit">Отправить</button>
 			</form>
 		</section>
-		<section class="template">
+		<section class="templates">
 			<h2 class="visually-hidden">Каталог шаблонов</h2>
 			<ul class="catalog">
 				<li>
 					<div class=template-item>
-						<img src="img/browser.svg" alt="меню" width="360" height="40">
+						<a class="template-item-link" href="#"><img src="img/browser.svg" alt="меню" width="360" height="40"></a>
 						<img src="img/img-sedona.jpg" alt="Шаблон седона" width="360" height="576">
 					</div>
-					<div class=review>
+					<div class=more-info>
 						<h3>Sedona</h3>
 						<p>Информационный сайт для туристов</p>
-						<a class="button" href="/catalog.html">9900 РУБ.</a>
+						<a class="button" href="/catalog.html">9900 руб.</a>
 					</div>
 				</li>
 
 				<li>
 					<div class=template-item>
-						<img src="img/browser.svg" alt="меню" width="360" height="40">
-						<img src="img/img-pink.jpg" alt="Шаблон PINK" width="360" height="576">
+						<a class="template-item-link" href="#"><img src="img/browser.svg" alt="меню" width="360" height="40"></a>
+						<img src="img/img-pink.jpg" alt="Шаблон Pink" width="360" height="576">
 					</div>
-					<div class=review>
-						<h3>Pink App</h3>
+					<div class=more-info>
+						<a href="#"><h3>Pink App</h3></a>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
-						<a class="button" href="/catalog.html">9900 РУБ.</a>
+						<a class="button" href="/catalog.html">9900 руб.</a>
 					</div>
 				</li>
 				<li>
 					<div class=template-item>
-						<img src="img/browser.svg" alt="меню" width="360" height="40">
+						<a class="template-item-link" href="#"><img src="img/browser.svg" alt="меню" width="360" height="40"></a>
 						<img src="img/img-barbershop.jpg" alt="Шаблон Барбершопа" width="360" height="576">
 					</div>
-					<div class=review>
-						<h3>Barbershop</h3>
+					<div class=active>
+						<a href="#"><h3>Barbershop</h3></a>
 						<p>Сайт салоны красоты. Для мужчин, да.</p>
-						<a class="button" href="/catalog.html">9900 РУБ.</a>
+						<a class="button" href="/catalog.html">9900 руб.</a>
 					</div>
 				</li>
 				<li>
-					<div class=template-item>
-						<img src="img/browser.svg" alt="меню" width="360" height="40">
+					<a class=template-item href="#">
+						<a class="template-item-link" href="#"><img src="img/browser.svg" alt="меню" width="360" height="40"></a>
 						<img src="img/img-mishka.jpg" alt="Шаблон Мишка" width="360" height="576">
-					</div>
-					<div class=review>
-						<h3>Mishka</h3>
+					</a>
+					<div class=more-info>
+						<a href="#"><h3>Mishka</h3></a>
 						<p>Интернет-магазин вязаных игрушек</p>
 						<a class="button" href="/catalog.html">9900 РУБ.</a>
 					</div>
 				</li>
 				<li>
 					<div class=template-item>
-						<img src="img/browser.svg" alt="меню" width="360" height="40">
+						<a class="template-item-link" href="#"><img src="img/browser.svg" alt="меню" width="360" height="40"></a>
 						<img src="img/img-aplus.jpg" alt="Шаблон A plus" width="360" height="576">
 					</div>
-					<div class=review>
-						<h3>A Plus</h3>
-						<p>Лендинг курсов повышения квалификации</p>
-						<a class="button" href="/catalog.html">9900 РУБ.</a>
+					<div class=more-info>
+						<a href="#"><h3>A Plus</h3>
+						<p>Лендинг курсов повышения квалификации</p></a>
+						<a class="button" href="/catalog.html">9900 руб.</a>
 					</div>
 				</li>
-
 				<li>
 					<div class=template-item>
-						<img src="img/browser.svg" alt="меню" width="360" height="40">
+						<a class="template-item-link" href="#"><img src="img/browser.svg" alt="меню" width="360" height="40"></a>
 						<img src="img/img-kvast.jpg" alt="Шаблон Кваст" width="360" height="576">
 					</div>
-					<div class=review>
-						<h3>Кваст</h3>
+					<div class=active>
+						<a href="#"><h3>Кваст</h3></a>
 						<p>Промо-сайт производителя крафтового кваса</p>
-						<a class="button" href="/catalog.html">9900 РУБ.</a>
+						<a class="button" href="/catalog.html">9900 руб.</a>
 					</div>
 				</li>
 			</ul>
