@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>HTML Academy: Нёрдс</title>
 </head>
+
 <body>
 	<header class="header">
 		<nav class="navigation">
@@ -23,7 +25,8 @@
 	<main class="catalog">
 		<section class="filters">
 			<form action="https://echo.htmlacademy.ru" method="post">
-				<div class="filter-type">
+				<fieldset>
+					<legend>Стоимость</legend>
 					<b>Сетка:</b>
 					<label>
 						<input class="filter-type-radio" type="radio" name="network" value="adaptable" checked="checked">
@@ -37,9 +40,9 @@
 						<input class="filter-type-radio" type="radio" name="network" value="rubber">
 						Резиновая
 					</label>
-				</div>
-				<div class="filter-module">
-					<b>Особенности:</b>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
 					<label>
 						<input class="filter-module-checkbox" type="checkbox" name="module" value="slider" checked="checked">
 						Слайдер
@@ -60,7 +63,7 @@
 						<input class="filter-module-checkbox" type="checkbox" name="module" value="basket">
 						Корзина
 					</label>
-				</div>
+				</fieldset>
 				<button class="filters-button" type="submit">Отправить</button>
 			</form>
 		</section>
@@ -71,7 +74,9 @@
 					<div class=template>
 						<img src="img/img-sedona.jpg" alt="Шаблон седона" width="360" height="576">
 						<div class=template-info>
-							<a href="#"><h3>Sedona</h3></a>
+							<a href="#">
+								<h3>Sedona</h3>
+							</a>
 							<p>Информационный сайт для туристов</p>
 							<a class="button" href="/catalog.html">9900 руб.</a>
 						</div>
@@ -81,7 +86,9 @@
 					<div class=template>
 						<img src="img/img-pink.jpg" alt="Шаблон Pink" width="360" height="576">
 						<div class=template-info>
-							<a href="#"><h3>Pink App</h3></a>
+							<a href="#">
+								<h3>Pink App</h3>
+							</a>
 							<p>Продуктовый лендинг приложения для iOS и Android</p>
 							<a class="button" href="/catalog.html">9900 руб.</a>
 						</div>
@@ -91,7 +98,9 @@
 					<div class=template>
 						<img src="img/img-barbershop.jpg" alt="Шаблон Барбершопа" width="360" height="576">
 						<div class=template-info>
-							<a href="#"><h3>Barbershop</h3></a>
+							<a href="#">
+								<h3>Barbershop</h3>
+							</a>
 							<p>Сайт салоны красоты. Для мужчин, да.</p>
 							<a class="button" href="/catalog.html">9900 руб.</a>
 						</div>
@@ -101,7 +110,9 @@
 					<div class=template>
 						<img src="img/img-mishka.jpg" alt="Шаблон Мишка" width="360" height="576">
 						<div class=template-info>
-							<a href="#"><h3>Mishka</h3></a>
+							<a href="#">
+								<h3>Mishka</h3>
+							</a>
 							<p>Интернет-магазин вязаных игрушек</p>
 							<a class="button" href="/catalog.html">9900 РУБ.</a>
 						</div>
@@ -111,7 +122,10 @@
 					<div class=template>
 						<img src="img/img-aplus.jpg" alt="Шаблон A plus" width="360" height="576">
 						<div class=template-info>
-							<p>Лендинг курсов повышения квалификации</p></a>
+							<a href="#">
+								<h3>A Plus</h3>
+								<p>Лендинг курсов повышения квалификации</p>
+							</a>
 							<a class="button" href="/catalog.html">9900 руб.</a>
 						</div>
 					</div>
@@ -120,13 +134,30 @@
 					<div class=template>
 						<img src="img/img-kvast.jpg" alt="Шаблон Кваст" width="360" height="576">
 						<div class=template-info>
-							<a href="#"><h3>Кваст</h3></a>
+							<a href="#">
+								<h3>Кваст</h3>
+							</a>
 							<p>Промо-сайт производителя крафтового кваса</p>
 							<a class="button" href="/catalog.html">9900 руб.</a>
 						</div>
 					</div>
 				</li>
 			</ul>
+		</section>
+		<section class="write-us">
+			<h2>Напишите нам</h2>
+			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+				<label for="username">Ваше имя:</label>
+				<input class="write-us-username" type=text id="username" placeholder="Представьтесь, пожалуйста">
+				<label for="email">Ваш e-mail:</label>
+				<input class="write-us-email" type=text id="email" placeholder="Для отправки ответа">
+				<label for="message">Текст письма:</label>
+				<input class="write-us-form" type=text id="message" id="message" placeholder="В свободной форме">
+				<button class="write-us-button" type="submit">Отправить</button>
+			</form>
+			<button class="modal-close" type="button">
+				Закрыть
+			</button>
 		</section>
 	</main>
 	<footer class="main-footer">
