@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet"> 
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
 	<header class="header">
 		<nav class="navigation">
@@ -26,45 +27,44 @@
 		<section class="filters">
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<fieldset>
-					<legend>Стоимость</legend>
-					<b>Сетка:</b>
+					<legend>Сетка:</legend>
 					<label>
-						<input class="filter-type-radio" type="radio" name="network" value="adaptable" checked="checked">
+						<input class="filter-input filter-type-radio" type="radio" name="network" value="adaptable" checked="checked">
 						Адаптивная
 					</label>
 					<label>
-						<input class="filter-type-radio" type="radio" name="network" value="fixed">
+						<input class="filter-input filter-type-radio" type="radio" name="network" value="fixed">
 						Фиксированная
 					</label>
 					<label>
-						<input class="filter-type-radio" type="radio" name="network" value="rubber">
+						<input class="filter-input filter-type-radio" type="radio" name="network" value="rubber">
 						Резиновая
 					</label>
 				</fieldset>
 				<fieldset>
 					<legend>Особенности:</legend>
 					<label>
-						<input class="filter-module-checkbox" type="checkbox" name="module" value="slider" checked="checked">
+						<input class="filter-input filter-module-checkbox" type="checkbox" name="module" value="slider" checked="checked">
 						Слайдер
 					</label>
 					<label>
-						<input class="filter-module-checkbox" type="checkbox" name="module" value="block">
+						<input class="filter-input filter-module-checkbox" type="checkbox" name="module" value="block">
 						Блок преимуществ
 					</label>
 					<label>
-						<input class="filter-module-checkbox" type="checkbox" name="module" value="news" checked="checked">
+						<input class="filter-input filter-module-checkbox" type="checkbox" name="module" value="news" checked="checked">
 						Новости
 					</label>
 					<label>
-						<input class="filter-module-checkbox" type="checkbox" name="module" value="gallery">
+						<input class="filter-input filter-module-checkbox" type="checkbox" name="module" value="gallery">
 						Галерея
 					</label>
 					<label>
-						<input class="filter-module-checkbox" type="checkbox" name="module" value="basket">
+						<input class="filter-input filter-module-checkbox" type="checkbox" name="module" value="basket">
 						Корзина
 					</label>
 				</fieldset>
-				<button class="filters-button" type="submit">Отправить</button>
+				<button class="filters-button" type="submit">Показать</button>
 			</form>
 		</section>
 		<section class="templates">
@@ -122,8 +122,8 @@
 					<div class=template>
 						<img src="img/img-aplus.jpg" alt="Шаблон A plus" width="360" height="576">
 						<div class=template-info>
-							<a href="#">
-								<h3>A Plus</h3></a>
+							<a href="#"></a>
+								<h3>A Plus</h3>
 								<p>Лендинг курсов повышения квалификации</p>
 							<a class="button" href="/catalog.html">9900 руб.</a>
 						</div>
